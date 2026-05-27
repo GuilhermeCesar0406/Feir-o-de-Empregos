@@ -1,594 +1,396 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Feirão de Empregos</title>
+  <title>Feirão de Empregos 2026</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- HERO -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="logo">🚀 Feirão<span>Empregos</span></a>
 
-  <section class="hero">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
 
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio">Início</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#empresas">Empresas</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#cursos">Cursos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
     <div class="container hero-content">
-
-      <div>
-
-        <div class="badge">
-          🚀 Feirão de Empregos 2026
-        </div>
+      <div class="hero-text reveal">
+        <div class="badge">🚀 Feirão de Empregos 2026</div>
 
         <h1>
-          Entrevista de Emprego:
-          <span>O Que os Recrutadores Procuram em Você?</span>
+          O maior feirão de empregos da região
+          <span>conectando talentos às oportunidades</span>
         </h1>
 
         <p>
-          Aprenda como se destacar em processos seletivos,
-          responder perguntas com confiança e impressionar
-          recrutadores com postura profissional.
+          Prepare-se para entrevistas, conheça habilidades valorizadas pelas empresas
+          e descubra como se destacar no mercado de trabalho.
         </p>
 
-        <div class="hero-buttons">
-
-          <a href="#" class="btn btn-primary">
-            Quero Participar
-          </a>
-
-          <a href="#dicas" class="btn btn-secondary">
-            Saiba Mais
-          </a>
-
-          <a href="#cursos" class="btn btn-cursos">
-            📚 Cursos Gratuitos
-          </a>
-
+        <div class="event-info">
+          <div><strong>📅 Data:</strong> 30/05/2026</div>
+          <div><strong>⏰ Horário:</strong> 14h às 17h</div>
+          <div><strong>📍 Local:</strong> UNIFUNEC Campus 2</div>
         </div>
 
+        <div class="hero-buttons">
+          <a href="https://wa.me/5517991846379?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Feir%C3%A3o%20de%20Empregos" class="btn btn-primary" target="_blank">Falar no WhatsApp</a>
+          <a href="#dicas" class="btn btn-secondary">Saiba Mais</a>
+          <a href="#cursos" class="btn btn-cursos">📚 Cursos Gratuitos</a>
+        </div>
       </div>
 
-      <div class="hero-card">
-
+      <div class="hero-card reveal">
         <h3>✨ O que você vai aprender?</h3>
-
         <ul>
-
-          <li>
-            <div class="check">✓</div>
-            Como responder perguntas difíceis
-          </li>
-
-          <li>
-            <div class="check">✓</div>
-            O que os recrutadores realmente observam
-          </li>
-
-          <li>
-            <div class="check">✓</div>
-            Como controlar o nervosismo
-          </li>
-
-          <li>
-            <div class="check">✓</div>
-            Técnicas para se destacar na entrevista
-          </li>
-
-          <li>
-            <div class="check">✓</div>
-            Método STAR para respostas profissionais
-          </li>
-
+          <li><div class="check">✓</div>Como responder perguntas difíceis</li>
+          <li><div class="check">✓</div>O que os recrutadores realmente observam</li>
+          <li><div class="check">✓</div>Como controlar o nervosismo</li>
+          <li><div class="check">✓</div>Técnicas para se destacar na entrevista</li>
+          <li><div class="check">✓</div>Método STAR para respostas profissionais</li>
         </ul>
-
       </div>
-
     </div>
-
   </section>
 
-  <!-- HABILIDADES -->
-
-  <section>
-
+  <section class="countdown-section">
     <div class="container">
+      <div class="countdown-box reveal">
+        <h2>⏳ O evento começa em:</h2>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>Dias</span></div>
+          <div><strong id="hours">00</strong><span>Horas</span></div>
+          <div><strong id="minutes">00</strong><span>Minutos</span></div>
+          <div><strong id="seconds">00</strong><span>Segundos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="section-title">
-
+  <section id="habilidades">
+    <div class="container">
+      <div class="section-title reveal">
         <h2>O que os recrutadores procuram?</h2>
-
         <p>
-          Descubra as habilidades e comportamentos mais valorizados
-          pelas empresas durante processos seletivos.
+          Descubra as habilidades e comportamentos mais valorizados pelas empresas
+          durante processos seletivos.
         </p>
-
       </div>
 
       <div class="grid">
-
-        <!-- HABILIDADES TÉCNICAS -->
-
-        <div class="card">
-
+        <div class="card reveal">
           <div class="icon">💻</div>
-
           <h3>Habilidades Técnicas</h3>
-
-          <p>
-            Conhecimentos específicos como Excel,
-            informática, idiomas e sistemas profissionais.
-          </p>
-
-          <button class="btn btn-primary open-modal-tech">
-            Como desenvolver?
-          </button>
-
+          <p>Conhecimentos específicos como Excel, informática, idiomas e sistemas profissionais.</p>
+          <button class="btn btn-primary" data-modal="modalTech">Como desenvolver?</button>
         </div>
 
-        <!-- COMUNICAÇÃO -->
-
-        <div class="card">
-
+        <div class="card reveal">
           <div class="icon">👥</div>
-
           <h3>Comunicação</h3>
-
-          <p>
-            Saber se comunicar com clareza,
-            trabalhar em equipe e manter postura profissional.
-          </p>
-
-          <button class="btn btn-primary open-modal-com">
-            Como melhorar?
-          </button>
-
+          <p>Saber se comunicar com clareza, trabalhar em equipe e manter postura profissional.</p>
+          <button class="btn btn-primary" data-modal="modalCom">Como melhorar?</button>
         </div>
 
-        <!-- INICIATIVA -->
-
-        <div class="card">
-
+        <div class="card reveal">
           <div class="icon">⚡</div>
-
           <h3>Iniciativa</h3>
-
-          <p>
-            Empresas valorizam candidatos proativos
-            que ajudam sem precisar ser cobrados.
-          </p>
-
-          <button class="btn btn-primary open-modal-init">
-            Como desenvolver?
-          </button>
-
+          <p>Empresas valorizam candidatos proativos que ajudam sem precisar ser cobrados.</p>
+          <button class="btn btn-primary" data-modal="modalInit">Como desenvolver?</button>
         </div>
 
-        <!-- ADAPTABILIDADE -->
-
-        <div class="card">
-
+        <div class="card reveal">
           <div class="icon">🔄</div>
-
           <h3>Adaptabilidade</h3>
-
-          <p>
-            Demonstrar facilidade para aprender
-            e lidar com mudanças.
-          </p>
-
-          <button class="btn btn-primary open-modal-adap">
-            Como melhorar?
-          </button>
-
+          <p>Demonstrar facilidade para aprender, lidar com mudanças e aceitar novos desafios.</p>
+          <button class="btn btn-primary" data-modal="modalAdap">Como melhorar?</button>
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-  <!-- DICAS -->
 
   <section class="tips" id="dicas">
-
     <div class="container">
-
-      <div class="section-title">
-
+      <div class="section-title reveal">
         <h2>💡 Dicas para se destacar</h2>
-
-        <p>
-          Pequenas atitudes fazem grande diferença
-          durante uma entrevista.
-        </p>
-
+        <p>Pequenas atitudes fazem grande diferença durante uma entrevista.</p>
       </div>
 
-      <div class="tip-box">
-
+      <div class="tip-box reveal">
         <h3>🎯 Demonstre confiança</h3>
-
-        <p>
-          Mantenha contato visual, fale com clareza
-          e demonstre segurança ao responder.
-        </p>
-
+        <p>Mantenha contato visual, fale com clareza e demonstre segurança ao responder.</p>
       </div>
 
-      <div class="tip-box">
-
+      <div class="tip-box reveal">
         <h3>🧠 Use exemplos reais</h3>
-
-        <p>
-          Cite situações que você já viveu para demonstrar
-          responsabilidade e experiência.
-        </p>
-
+        <p>Cite situações que você já viveu para demonstrar responsabilidade e experiência.</p>
       </div>
 
-      <div class="tip-box">
-
+      <div class="tip-box reveal">
         <h3>📚 Pesquise sobre a empresa</h3>
-
-        <p>
-          Conhecer os valores da empresa mostra interesse
-          e preparo profissional.
-        </p>
-
+        <p>Conhecer os valores da empresa mostra interesse e preparo profissional.</p>
       </div>
 
-      <div class="tip-box">
-
+      <div class="tip-box reveal">
         <h3>👔 Cuide da aparência</h3>
-
-        <p>
-          Utilize roupas adequadas e postura profissional
-          para transmitir credibilidade.
-        </p>
-
+        <p>Utilize roupas adequadas e postura profissional para transmitir credibilidade.</p>
       </div>
-
     </div>
-
   </section>
 
-  <!-- CTA -->
+  <section class="empresas" id="empresas">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>🏢 Empresas participantes</h2>
+        <p>Empresas parceiras estarão presentes para orientar, conhecer talentos e apresentar oportunidades.</p>
+      </div>
+
+      <div class="logos">
+        <div class="logo-card reveal">Flash Cover</div>
+        <div class="logo-card reveal">Brasilian Fish</div>
+        <div class="logo-card reveal">Mola Santa Fé</div>
+        <div class="logo-card reveal">Raguife</div>
+        <div class="logo-card reveal">Bodytime</div>
+        <div class="logo-card reveal">Bello Alimentos</div>
+        <div class="logo-card reveal">Help Med</div>
+        <div class="logo-card reveal">Sulmatel</div>
+        <div class="logo-card reveal">Alcoolvale</div>
+        <div class="logo-card reveal">Terra Novva</div>
+        <div class="logo-card reveal">Aguas Resort</div>
+        <div class="logo-card reveal">Arvoreto Resort</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>❓ Dúvidas frequentes</h2>
+        <p>Veja algumas informações importantes para participar do evento.</p>
+      </div>
+
+      <div class="faq-box reveal">
+        <h3>O evento é gratuito?</h3>
+        <p>Sim. A participação no Feirão de Empregos é gratuita.</p>
+      </div>
+
+      <div class="faq-box reveal">
+        <h3>Preciso levar currículo?</h3>
+        <p>Sim. É recomendado levar currículo atualizado impresso e também uma versão digital, caso voce não tenha vamos ajudar a fazer</p>
+      </div>
+
+      <div class="faq-box reveal">
+        <h3>Quem pode participar?</h3>
+        <p>Estudantes, jovens em busca do primeiro emprego e profissionais que desejam novas oportunidades.</p>
+      </div>
+    </div>
+  </section>
 
   <section>
-
     <div class="container">
-
-      <div class="cta">
-
-        <h2>
-          🚀 Prepare-se para conquistar sua vaga!
-        </h2>
-
+      <div class="cta reveal">
+        <h2>🚀 Prepare-se para conquistar sua oportunidade!</h2>
         <p>
-          Aprenda técnicas práticas, postura profissional
-          e estratégias utilizadas pelos recrutadores.
+          Aprenda técnicas práticas, postura profissional e estratégias utilizadas pelos recrutadores.
         </p>
-
-        <a href="#" class="btn btn-secondary">
-          Garantir Participação
-        </a>
-
+        <a href="https://wa.me/5517991846379?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Feir%C3%A3o%20de%20Empregos" class="btn btn-secondary" target="_blank">Falar no WhatsApp</a>
       </div>
-
     </div>
-
   </section>
 
-  <!-- MODAL HABILIDADES TÉCNICAS -->
-
   <div class="modal" id="modalTech">
-
     <div class="modal-content">
-
-      <span class="close-tech">&times;</span>
-
+      <button class="close-modal">&times;</button>
       <h2>💻 Como desenvolver habilidades técnicas?</h2>
-
-      <p class="modal-text">
-        As habilidades técnicas são desenvolvidas
-        através de cursos, treinamentos e prática.
-      </p>
-
+      <p class="modal-text">As habilidades técnicas são desenvolvidas através de cursos, treinamentos e prática.</p>
       <div class="modal-grid">
-
-        <div class="modal-card">
-          <h3>📊 Excel</h3>
-          <p>Aprenda ferramentas usadas pelas empresas.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>🌎 Idiomas</h3>
-          <p>Inglês aumenta oportunidades profissionais.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>💡 Cursos</h3>
-          <p>Faça cursos gratuitos online.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>🚀 Prática</h3>
-          <p>Desenvolva projetos e pratique diariamente.</p>
-        </div>
-
+        <div class="modal-card"><h3>📊 Excel</h3><p>Aprenda ferramentas usadas pelas empresas.</p></div>
+        <div class="modal-card"><h3>🌎 Idiomas</h3><p>Inglês aumenta oportunidades profissionais.</p></div>
+        <div class="modal-card"><h3>💡 Cursos</h3><p>Faça cursos gratuitos online.</p></div>
+        <div class="modal-card"><h3>🚀 Prática</h3><p>Desenvolva projetos e pratique diariamente.</p></div>
       </div>
-
     </div>
-
   </div>
-
-  <!-- MODAL COMUNICAÇÃO -->
 
   <div class="modal" id="modalCom">
-
     <div class="modal-content">
-
-      <span class="close-com">&times;</span>
-
+      <button class="close-modal">&times;</button>
       <h2>👥 Como melhorar a comunicação?</h2>
-
-      <p class="modal-text">
-        Uma boa comunicação ajuda no relacionamento
-        profissional e nas entrevistas.
-      </p>
-
+      <p class="modal-text">Uma boa comunicação ajuda no relacionamento profissional e nas entrevistas.</p>
       <div class="modal-grid">
-
-        <div class="modal-card">
-          <h3>🗣️ Fale com clareza</h3>
-          <p>Organize suas ideias antes de responder.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>👂 Saiba ouvir</h3>
-          <p>Escutar demonstra respeito e atenção.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>📚 Leia mais</h3>
-          <p>A leitura melhora vocabulário.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>🎤 Treine</h3>
-          <p>Pratique apresentações e conversas.</p>
-        </div>
-
+        <div class="modal-card"><h3>🗣️ Fale com clareza</h3><p>Organize suas ideias antes de responder.</p></div>
+        <div class="modal-card"><h3>👂 Saiba ouvir</h3><p>Escutar demonstra respeito e atenção.</p></div>
+        <div class="modal-card"><h3>📚 Leia mais</h3><p>A leitura melhora vocabulário.</p></div>
+        <div class="modal-card"><h3>🎤 Treine</h3><p>Pratique apresentações e conversas.</p></div>
       </div>
-
     </div>
-
   </div>
-
-  <!-- MODAL INICIATIVA -->
 
   <div class="modal" id="modalInit">
-
     <div class="modal-content">
-
-      <span class="close-init">&times;</span>
-
+      <button class="close-modal">&times;</button>
       <h2>⚡ Como desenvolver iniciativa?</h2>
-
-      <p class="modal-text">
-        Ter iniciativa significa agir antes de ser solicitado.
-      </p>
-
+      <p class="modal-text">Ter iniciativa significa agir antes de ser solicitado.</p>
       <div class="modal-grid">
-
-        <div class="modal-card">
-          <h3>🚀 Seja proativo</h3>
-          <p>Ajude em tarefas sem precisar pedir.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>📌 Observe problemas</h3>
-          <p>Identifique oportunidades de melhoria.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>💡 Sugira ideias</h3>
-          <p>Demonstrar criatividade chama atenção.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>📈 Evolua sempre</h3>
-          <p>Busque aprender constantemente.</p>
-        </div>
-
+        <div class="modal-card"><h3>🚀 Seja proativo</h3><p>Ajude em tarefas sem precisar pedir.</p></div>
+        <div class="modal-card"><h3>📌 Observe problemas</h3><p>Identifique oportunidades de melhoria.</p></div>
+        <div class="modal-card"><h3>💡 Sugira ideias</h3><p>Demonstrar criatividade chama atenção.</p></div>
+        <div class="modal-card"><h3>📈 Evolua sempre</h3><p>Busque aprender constantemente.</p></div>
       </div>
-
     </div>
-
   </div>
-
-  <!-- MODAL ADAPTABILIDADE -->
 
   <div class="modal" id="modalAdap">
-
     <div class="modal-content">
-
-      <span class="close-adap">&times;</span>
-
+      <button class="close-modal">&times;</button>
       <h2>🔄 Como melhorar a adaptabilidade?</h2>
-
-      <p class="modal-text">
-        Adaptabilidade é a capacidade de lidar
-        com mudanças e novos desafios.
-      </p>
-
+      <p class="modal-text">Adaptabilidade é a capacidade de lidar com mudanças e novos desafios.</p>
       <div class="modal-grid">
-
-        <div class="modal-card">
-          <h3>📚 Aprenda coisas novas</h3>
-          <p>Esteja aberto a novos conhecimentos.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>🔄 Aceite mudanças</h3>
-          <p>Mudanças fazem parte do crescimento.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>🧠 Inteligência emocional</h3>
-          <p>Controle emoções em situações difíceis.</p>
-        </div>
-
-        <div class="modal-card">
-          <h3>🚀 Seja flexível</h3>
-          <p>Saiba lidar com novas funções e desafios.</p>
-        </div>
-
+        <div class="modal-card"><h3>📚 Aprenda coisas novas</h3><p>Esteja aberto a novos conhecimentos.</p></div>
+        <div class="modal-card"><h3>🔄 Aceite mudanças</h3><p>Mudanças fazem parte do crescimento.</p></div>
+        <div class="modal-card"><h3>🧠 Inteligência emocional</h3><p>Controle emoções em situações difíceis.</p></div>
+        <div class="modal-card"><h3>🚀 Seja flexível</h3><p>Saiba lidar com novas funções e desafios.</p></div>
       </div>
-
     </div>
-
   </div>
 
-  <!-- FOOTER -->
-
-  <footer class="footer">
-
+  <footer class="footer" id="cursos">
     <div class="container">
-
-      <div class="footer-top">
-
+      <div class="footer-top reveal">
         <div class="footer-info">
-
           <h2>🚀 Continue evoluindo profissionalmente</h2>
-
           <p>
-            Desenvolva novas habilidades através de cursos gratuitos
-            e profissionalizantes oferecidos pelo SENAI e Fundação Bradesco.
+            Desenvolva novas habilidades através de cursos gratuitos e profissionalizantes
+            oferecidos pelo SENAI e Fundação Bradesco.
           </p>
-
         </div>
-
       </div>
 
-      <div class="footer-cards" id="cursos">
-
-        <!-- SENAI -->
-
-        <div class="footer-card">
-
+      <div class="footer-cards">
+        <div class="footer-card reveal">
           <div class="footer-icon">🏭</div>
-
           <h3>SENAI</h3>
-
-          <p>
-            Cursos técnicos, profissionalizantes e capacitações
-            para o mercado de trabalho.
-          </p>
-
+          <p>Cursos técnicos, profissionalizantes e capacitações para o mercado de trabalho.</p>
           <div class="footer-buttons">
-
-            <a href="https://www.sp.senai.br/" target="_blank">
-              Site Oficial
-            </a>
-
-            <a href="https://www.sp.senai.br/cursos" target="_blank">
-              Ver Cursos
-            </a>
-
+            <a href="https://www.sp.senai.br/" target="_blank">Site Oficial</a>
+            <a href="https://www.sp.senai.br/cursos" target="_blank">Ver Cursos</a>
           </div>
-
         </div>
 
-        <!-- FUNDAÇÃO BRADESCO -->
-
-        <div class="footer-card">
-
+        <div class="footer-card reveal">
           <div class="footer-icon">📚</div>
-
           <h3>Fundação Bradesco</h3>
-
-          <p>
-            Plataforma com cursos gratuitos online
-            para desenvolver habilidades profissionais.
-          </p>
-
+          <p>Plataforma com cursos gratuitos online para desenvolver habilidades profissionais.</p>
           <div class="footer-buttons">
-
-            <a href="https://www.ev.org.br/" target="_blank">
-              Site Oficial
-            </a>
-
-            <a href="https://www.ev.org.br/cursos" target="_blank">
-              Ver Cursos
-            </a>
-
+            <a href="https://www.ev.org.br/" target="_blank">Site Oficial</a>
+            <a href="https://www.ev.org.br/cursos" target="_blank">Ver Cursos</a>
           </div>
-
         </div>
-
       </div>
 
       <div class="footer-bottom">
-
-        <p>
-          Feirão de Empregos 2026 • Entrevista de Emprego:
-          O Que os Recrutadores Procuram em Você?
-        </p>
-
-        <p>
-          Discentes: Gabriela Alegre Miranda e Iris Ribeiro Muniz
-        </p>
-
+        <p>Feirão de Empregos 2026 • 30/05 • 14h às 17h • UNIFUNEC Campus 2</p>
+        <p>Discentes: Gabriela Alegre Miranda e Iris Ribeiro Muniz</p>
       </div>
-
     </div>
-
   </footer>
 
-  <!-- SCRIPT -->
+  <a href="https://wa.me/5517999999999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Feir%C3%A3o%20de%20Empregos" class="whatsapp" target="_blank" aria-label="WhatsApp">💬</a>
 
   <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
 
-    function setupModal(openClass, modalId, closeClass) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
 
-      const modal = document.getElementById(modalId);
-      const openBtn = document.querySelector(openClass);
-      const closeBtn = document.querySelector(closeClass);
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
 
-      openBtn.onclick = () => {
-        modal.classList.add('active');
-      }
+    document.querySelectorAll('[data-modal]').forEach(button => {
+      button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal');
+        document.getElementById(modalId).classList.add('active');
+      });
+    });
 
-      closeBtn.onclick = () => {
-        modal.classList.remove('active');
-      }
+    document.querySelectorAll('.close-modal').forEach(button => {
+      button.addEventListener('click', () => {
+        button.closest('.modal').classList.remove('active');
+      });
+    });
 
-      window.addEventListener('click', (e) => {
-        if (e.target == modal) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
           modal.classList.remove('active');
         }
       });
+    });
 
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => modal.classList.remove('active'));
+      }
+    });
+
+    const eventDate = new Date('2026-05-30T14:00:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance <= 0) {
+        document.getElementById('countdown').innerHTML = '<strong>O evento começou!</strong>';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
     }
 
-    setupModal('.open-modal-tech', 'modalTech', '.close-tech');
-    setupModal('.open-modal-com', 'modalCom', '.close-com');
-    setupModal('.open-modal-init', 'modalInit', '.close-init');
-    setupModal('.open-modal-adap', 'modalAdap', '.close-adap');
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    reveals.forEach(element => observer.observe(element));
   </script>
-
 </body>
-
 </html>
